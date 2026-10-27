@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Blu Visual Teacher 🎬
 > **Offline Local-First Engine that turns any typed concept into short, narrated, animated 720p visual lessons in English and Indian languages (Hindi, Tamil, Telugu, Marathi, Bengali).**
 > Built for the **Blu Visual Teacher Hackathon (2026)**.
@@ -150,3 +151,6 @@ blu-visual-teacher/
 ├── requirements.txt           # Python dependencies
 └── README.md                  # Complete documentation & licence breakdown
 ```
+=======
+# Blu_Visual_Teacher
+>>>>>>> 0b48c231b3552a654b0dc2591607dc85f7206b96
