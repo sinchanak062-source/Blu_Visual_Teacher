@@ -1,0 +1,98 @@
+{
+  "language": "ta",
+  "level": "beginner",
+  "metrics": {
+    "cached": false,
+    "planning_time_sec": 0.032,
+    "audio_generation_time_sec": 1.094
+  },
+  "scenes": [
+    {
+      "heading": "பைதான் லூப் எவ்வாறு செயல்படுகிறது?",
+      "narration": "ஒரு வரிசையில் உள்ள ஒவ்வொரு மதிப்புக்கும் லூப் மீண்டும் மீண்டும் இயங்குகிறது.",
+      "type": "title_card",
+      "audio_url": "/static/cache/audio/ffafc124719336f271962a5d17210d53.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\ffafc124719336f271962a5d17210d53.mp3",
+      "audio_duration": 4.73,
+      "pause": 0.8,
+      "duration": 5.53
+    },
+    {
+      "code": "for i in range(3):\n    print(i)",
+      "heading": "படி 1: குறியீட்டைப் படியுங்கள்",
+      "highlight_lines": [
+        1
+      ],
+      "narration": "range(3) என்பது பூஜ்ஜியம், ஒன்று மற்றும் இரண்டு ஆகிய மூன்று மதிப்புகளைத் தருகிறது.",
+      "type": "code_walkthrough",
+      "audio_url": "/static/cache/audio/35dbcaf7d96929bc6199c89e58dd676e.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\35dbcaf7d96929bc6199c89e58dd676e.mp3",
+      "audio_duration": 4.51,
+      "pause": 0.8,
+      "duration": 5.31
+    },
+    {
+      "arrows": [
+        [
+          "i = 0",
+          "i = 1"
+        ],
+        [
+          "i = 1",
+          "i = 2"
+        ]
+      ],
+      "heading": "படி 2: ஒவ்வொரு சுழற்சியையும் கவனியுங்கள்",
+      "items": [
+        "i = 0",
+        "i = 1",
+        "i = 2"
+      ],
+      "narration": "ஒவ்வொரு சுழற்சியிலும் i அடுத்த மதிப்பை எடுத்து அச்சிடுகிறது.",
+      "type": "diagram",
+      "audio_url": "/static/cache/audio/f78ff1155b1527c690737cc7cd261f66.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\f78ff1155b1527c690737cc7cd261f66.mp3",
+      "audio_duration": 4.01,
+      "pause": 0.8,
+      "duration": 4.81
+    },
+    {
+      "heading": "படி 3: லூப் வரிசை",
+      "narration": "வரிசை முடியும் வரை லூப் தானாகவே இயங்கி முடிகிறது.",
+      "steps": [
+        "தொடக்க நிலை",
+        "i = 0",
+        "i = 1",
+        "i = 2",
+        "முடிவு"
+      ],
+      "type": "timeline",
+      "audio_url": "/static/cache/audio/7613f1a3f9a67ad3241eff05bb5369ab.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\7613f1a3f9a67ad3241eff05bb5369ab.mp3",
+      "audio_duration": 3.62,
+      "pause": 0.8,
+      "duration": 4.42
+    },
+    {
+      "correct_index": 1,
+      "heading": "வினாடி வினா",
+      "narration": "பைதானில் பூஜ்ஜியத்தில் தொடங்குவதால், அச்சிடப்படும் கடைசி மதிப்பு இரண்டு ஆகும்.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "question": "range(3) அச்சிடும் கடைசி மதிப்பு என்ன?",
+      "type": "quiz",
+      "audio_url": "/static/cache/audio/47a189229035d3224e4f336e740499f6.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\47a189229035d3224e4f336e740499f6.mp3",
+      "audio_duration": 5.4,
+      "pause": 0.8,
+      "duration": 6.2
+    }
+  ],
+  "target_length": 45,
+  "title": "பைதான் லூப் எவ்வாறு செயல்படுகிறது",
+  "total_duration": 26.27
+}

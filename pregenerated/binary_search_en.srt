@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:09,130
+Binary search is an ultra-fast algorithm to find a target in a sorted list by repeatedly halving the search space.
+
+2
+00:00:09,130 --> 00:00:17,469
+We check the middle element. If our target is smaller, we discard the right half entirely.
+
+3
+00:00:17,469 --> 00:00:27,390
+Calculate the mid index. If match found, return it. Otherwise adjust low or high boundary.
+
+4
+00:00:27,390 --> 00:00:35,609
+In each step, half of the remaining elements disappear, yielding logarithmic O of log N speed.
+
+5
+00:00:35,609 --> 00:00:44,399
+Binary search only works on sorted collections so that halving correctly determines which half contains the target.
+

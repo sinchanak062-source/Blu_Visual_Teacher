@@ -1,0 +1,98 @@
+{
+  "language": "hi",
+  "level": "beginner",
+  "metrics": {
+    "cached": false,
+    "planning_time_sec": 0.013,
+    "audio_generation_time_sec": 0.933
+  },
+  "scenes": [
+    {
+      "heading": "पायथन लूप कैसे काम करता है?",
+      "narration": "लूप एक ही निर्देश को क्रम के हर मान के लिए बार-बार दोहराता है।",
+      "type": "title_card",
+      "audio_url": "/static/cache/audio/ab11485ef7fa1841a680a6e5903ec1bc.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\ab11485ef7fa1841a680a6e5903ec1bc.mp3",
+      "audio_duration": 5.45,
+      "pause": 0.8,
+      "duration": 6.25
+    },
+    {
+      "code": "for i in range(3):\n    print(i)",
+      "heading": "चरण 1: कोड को समझें",
+      "highlight_lines": [
+        1
+      ],
+      "narration": "range(3) हमें तीन लगातार मान देता है: शून्य, एक और दो।",
+      "type": "code_walkthrough",
+      "audio_url": "/static/cache/audio/23eef16baaa62f3218cfc29ffb347a2c.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\23eef16baaa62f3218cfc29ffb347a2c.mp3",
+      "audio_duration": 6.91,
+      "pause": 0.8,
+      "duration": 7.71
+    },
+    {
+      "arrows": [
+        [
+          "i = 0",
+          "i = 1"
+        ],
+        [
+          "i = 1",
+          "i = 2"
+        ]
+      ],
+      "heading": "चरण 2: हर चक्र को देखें",
+      "items": [
+        "i = 0",
+        "i = 1",
+        "i = 2"
+      ],
+      "narration": "हर चक्र में i अगला मान लेता है और प्रिंट कमांड चलाता है।",
+      "type": "diagram",
+      "audio_url": "/static/cache/audio/e90ecc815d1092362be3c5b29cb64713.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\e90ecc815d1092362be3c5b29cb64713.mp3",
+      "audio_duration": 5.33,
+      "pause": 0.8,
+      "duration": 6.13
+    },
+    {
+      "heading": "चरण 3: लूप का जीवन चक्र",
+      "narration": "लूप क्रमवार आगे बढ़ता है और क्रम पूरा होते ही समाप्त हो जाता है।",
+      "steps": [
+        "शुरुआत",
+        "पहला मान i = 0",
+        "दूसरा मान i = 1",
+        "तीसरा मान i = 2",
+        "लूप समाप्त"
+      ],
+      "type": "timeline",
+      "audio_url": "/static/cache/audio/15ed42841b0d12cf64dbbce34cbf33d7.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\15ed42841b0d12cf64dbbce34cbf33d7.mp3",
+      "audio_duration": 5.78,
+      "pause": 0.8,
+      "duration": 6.58
+    },
+    {
+      "correct_index": 1,
+      "heading": "अभ्यास प्रश्न",
+      "narration": "पायथन में गिनती शून्य से शुरू होती है, इसलिए अंतिम प्रिंट मान दो होगा।",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "question": "range(3) का अंतिम प्रिंट मान क्या होगा?",
+      "type": "quiz",
+      "audio_url": "/static/cache/audio/87d16b1446abb77b2e9b5f02e0e84abf.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\87d16b1446abb77b2e9b5f02e0e84abf.mp3",
+      "audio_duration": 6.46,
+      "pause": 0.8,
+      "duration": 7.26
+    }
+  ],
+  "target_length": 45,
+  "title": "पायथन लूप कैसे काम करता है",
+  "total_duration": 33.93
+}

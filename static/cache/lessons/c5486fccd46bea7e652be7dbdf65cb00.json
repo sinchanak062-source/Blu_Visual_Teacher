@@ -1,0 +1,98 @@
+{
+  "language": "te",
+  "level": "beginner",
+  "metrics": {
+    "cached": false,
+    "planning_time_sec": 0.022,
+    "audio_generation_time_sec": 11.246
+  },
+  "scenes": [
+    {
+      "heading": "పైథాన్ లూప్ ఎలా పనిచేస్తుంది?",
+      "narration": "ఒక శ్రేణిలోని ప్రతి విలువకు ఒక సూచనను లూప్ మళ్లీ మళ్లీ అమలు చేస్తుంది.",
+      "type": "title_card",
+      "audio_url": "/static/cache/audio/f2624e6c8ebd68c19d5b5c7bd36a936a.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\f2624e6c8ebd68c19d5b5c7bd36a936a.mp3",
+      "audio_duration": 5.18,
+      "pause": 0.8,
+      "duration": 5.98
+    },
+    {
+      "code": "for i in range(3):\n    print(i)",
+      "heading": "దశ 1: కోడ్‌ను గమనించండి",
+      "highlight_lines": [
+        1
+      ],
+      "narration": "range(3) అనేది సున్నా, ఒకటి మరియు రెండు అనే మూడు విలువలను ఇస్తుంది.",
+      "type": "code_walkthrough",
+      "audio_url": "/static/cache/audio/479f36233dfe6538a83c3e874a02f9fe.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\479f36233dfe6538a83c3e874a02f9fe.mp3",
+      "audio_duration": 4.45,
+      "pause": 0.8,
+      "duration": 5.25
+    },
+    {
+      "arrows": [
+        [
+          "i = 0",
+          "i = 1"
+        ],
+        [
+          "i = 1",
+          "i = 2"
+        ]
+      ],
+      "heading": "దశ 2: ప్రతి ఇటరేషన్ చూడండి",
+      "items": [
+        "i = 0",
+        "i = 1",
+        "i = 2"
+      ],
+      "narration": "ప్రతి లూప్‌లో i తదుపరి విలువను తీసుకుని ప్రింట్ చేస్తుంది.",
+      "type": "diagram",
+      "audio_url": "/static/cache/audio/895d41a5942a7c82e76094cd50503913.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\895d41a5942a7c82e76094cd50503913.mp3",
+      "audio_duration": 3.89,
+      "pause": 0.8,
+      "duration": 4.69
+    },
+    {
+      "heading": "దశ 3: లూప్ సైకిల్",
+      "narration": "శ్రేణి పూర్తయ్యే వరకు లూప్ సజావుగా సాగుతుంది.",
+      "steps": [
+        "ప్రారంభం",
+        "విలువ i = 0",
+        "విలువ i = 1",
+        "విలువ i = 2",
+        "లూప్ ముగింపు"
+      ],
+      "type": "timeline",
+      "audio_url": "/static/cache/audio/f5d4eb94bbc8b6de2af52d5c4bf904c8.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\f5d4eb94bbc8b6de2af52d5c4bf904c8.mp3",
+      "audio_duration": 3.29,
+      "pause": 0.8,
+      "duration": 4.09
+    },
+    {
+      "correct_index": 1,
+      "heading": "క్విజ్ ప్రశ్న",
+      "narration": "పైథాన్‌లో లెక్కింపు సున్నా నుండి మొదలవుతుంది కాబట్టి చివరి విలువ రెండు.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "question": "range(3) ప్రింట్ చేసే చివరి విలువ ఏమిటి?",
+      "type": "quiz",
+      "audio_url": "/static/cache/audio/79609cc19ec4529a7b1789a38f5ce202.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\79609cc19ec4529a7b1789a38f5ce202.mp3",
+      "audio_duration": 4.68,
+      "pause": 0.8,
+      "duration": 5.48
+    }
+  ],
+  "target_length": 45,
+  "title": "పైథాన్ లూప్ ఎలా పనిచేస్తుంది",
+  "total_duration": 25.49
+}

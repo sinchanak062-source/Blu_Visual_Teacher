@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blu Visual Teacher — Local Offline Visual Lesson Engine</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Preload fonts if needed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body class="dark-theme">
+  <!-- App Container -->
+  <div class="app-layout">
+    <!-- Top Global Header -->
+    <header class="app-header">
+      <div class="header-brand">
+        <div class="brand-logo-glow">
+          <span class="brand-logo-icon">🎬</span>
+        </div>
+        <div>
+          <h1 class="brand-title">Blu Visual Teacher</h1>
+          <p class="brand-subtitle">Local-First Animated Educational Video Engine</p>
+        </div>
+      </div>
+
+      <div class="header-badges">
+        <span class="badge offline-badge" id="offlineStatus">
+          <span class="status-dot"></span> 100% Offline Ready
+        </span>
+        <span class="badge sys-badge" id="cpuBadge">CPU / Laptop Mode</span>
+        <span class="badge lang-badge" id="langBadge">Multilingual (EN + Indic)</span>
+      </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="main-container">
+      <!-- Left Column: Input & Controls -->
+      <section class="control-panel card">
+        <div class="panel-section-title">
+          <h2>1. Concept Input</h2>
+          <span class="stage-tag">Stage 1</span>
+        </div>
+
+        <!-- Concept input form -->
+        <form id="lessonForm" class="lesson-form" onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label for="topicInput">What concept do you want to teach?</label>
+            <div class="input-with-button">
+              <input 
+                type="text" 
+                id="topicInput" 
+                class="text-input" 
+                placeholder="e.g. How does a Python loop work?" 
+                value="How a Python loop works" 
+                required
+              />
+            </div>
+            
+            <!-- Quick Chips -->
+            <div class="quick-chips">
+              <span class="chip-label">Quick Suggestions:</span>
+              <button type="button" class="chip" data-topic="How a Python loop works">Python Loops</button>
+              <button type="button" class="chip" data-topic="Binary Search Algorithm">Binary Search</button>
+              <button type="button" class="chip" data-topic="How Photosynthesis Works">Photosynthesis</button>
+              <button type="button" class="chip" data-topic="Newton's Third Law of Motion">Newton's 3rd Law</button>
+              <button type="button" class="chip" data-topic="Recursion and Call Stack">Recursion</button>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="levelSelect">Learner Level</label>
+              <select id="levelSelect" class="select-input">
+                <option value="beginner" selected>Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>
+            </div>
+
+            <div class="form-group flex-1">
+              <label for="langSelect">Language</label>
+              <select id="langSelect" class="select-input">
+                <option value="en" selected>English (Indian Accent)</option>
+                <option value="hi">Hindi (हिंदी - Devanagari)</option>
+                <option value="ta">Tamil (தமிழ்)</option>
+                <option value="te">Telugu (తెలుగు)</option>
+                <option value="mr">Marathi (मराठी)</option>
+                <option value="bn">Bengali (বাংলা)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="voiceSelect">Voice Gender</label>
+              <select id="voiceSelect" class="select-input">
+                <option value="female" selected>Female Voice</option>
+                <option value="male">Male Voice</option>
+              </select>
+            </div>
+
+            <div class="form-group flex-1">
+              <label for="speedSelect">Speed Control</label>
+              <select id="speedSelect" class="select-input">
+                <option value="0.9">0.9x (Relaxed)</option>
+                <option value="1.0" selected>1.0x (Normal)</option>
+                <option value="1.15">1.15x (Brisk)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="button-group">
+            <button type="button" id="generateBtn" class="btn btn-primary">
+              <span class="btn-icon">⚡</span> Generate Lesson (End-to-End)
+            </button>
+            <button type="button" id="planOnlyBtn" class="btn btn-secondary">
+              <span class="btn-icon">📝</span> Plan Lesson First
+            </button>
+          </div>
+        </form>
+
+        <!-- Generation Telemetry / Timing Metrics -->
+        <div class="telemetry-box" id="telemetryBox">
+          <div class="telemetry-header">
+            <span>⏱ Generation Speed & Footprint</span>
+            <span class="cache-badge" id="cacheHitBadge">Fresh</span>
+          </div>
+          <div class="telemetry-grid">
+            <div class="metric-card">
+              <span class="metric-label">Stage 2 (LLM Plan)</span>
+              <span class="metric-value" id="planTimeVal">--</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Stage 4 (TTS Sync)</span>
+              <span class="metric-value" id="ttsTimeVal">--</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Stage 5 (720p Render)</span>
+              <span class="metric-value" id="renderTimeVal">--</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label">Total Duration</span>
+              <span class="metric-value" id="totalDurationVal">--</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bonus Feature: Teacher Edit Before Render -->
+        <div class="editor-section" id="editorSection">
+          <div class="panel-section-title">
+            <h3>Teacher Scene Editor</h3>
+            <span class="bonus-tag">Bonus Feature</span>
+          </div>
+          <p class="section-help">Edit any scene's narration, code, or headings below, then update audio:</p>
+          
+          <div id="scenesList" class="scenes-accordion">
+            <!-- Scene cards dynamically populated -->
+          </div>
+
+          <div class="revoice-bar">
+            <span>Re-voice in another language:</span>
+            <select id="revoiceSelect" class="select-input select-small">
+              <option value="hi">Switch to Hindi</option>
+              <option value="en">Switch to English</option>
+              <option value="ta">Switch to Tamil</option>
+              <option value="te">Switch to Telugu</option>
+            </select>
+            <button type="button" id="revoiceBtn" class="btn btn-small btn-secondary">Re-Voice</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Column: Visual Engine Player & MP4 Export -->
+      <section class="player-panel card">
+        <div class="panel-section-title">
+          <h2>3. Visual Engine (Browser Player)</h2>
+          <span class="stage-tag">Stage 3 & 4</span>
+        </div>
+
+        <!-- 16:9 Player Viewport -->
+        <div class="player-viewport-wrapper">
+          <div class="player-canvas-container" id="playerContainer">
+            <!-- Top Header in Player -->
+            <div class="player-top-bar">
+              <div class="player-brand-badge">BLU TEACHER</div>
+              <div class="player-lesson-title" id="playerLessonTitle">How a Python loop works</div>
+              <div class="player-scene-counter" id="playerSceneCounter">Scene 1 of 5</div>
+            </div>
+
+            <!-- Top Progress Bar -->
+            <div class="player-progress-bar-container">
+              <div class="player-progress-fill" id="playerProgressFill" style="width: 0%;"></div>
+            </div>
+
+            <!-- Scene Heading Display -->
+            <div class="player-scene-heading-bar">
+              <span class="scene-step-pill" id="playerStepPill">STEP 1</span>
+              <h3 class="scene-heading-text" id="playerHeadingText">How does a Python loop work?</h3>
+            </div>
+
+            <!-- Main Dynamic Scene Viewport -->
+            <div class="player-scene-stage" id="playerStage">
+              <!-- Dynamically injected SVG/HTML components based on scene type -->
+              <div class="stage-placeholder">
+                <span class="placeholder-icon">📺</span>
+                <p>Click "Generate Lesson" or pick a pregenerated benchmark lesson below to start playing!</p>
+              </div>
+            </div>
+
+            <!-- Bottom Subtitle Caption Bar -->
+            <div class="player-caption-bar" id="playerCaptionBar">
+              <div class="caption-icon">🎙</div>
+              <div class="caption-text-wrapper">
+                <p class="caption-text" id="playerCaptionText">A loop repeats an instruction for each value in a sequence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Player Controls Bar -->
+        <div class="player-controls-bar">
+          <div class="playback-controls">
+            <button type="button" id="prevSceneBtn" class="ctrl-btn" title="Previous Scene">⏮</button>
+            <button type="button" id="playPauseBtn" class="ctrl-btn play-btn" title="Play / Pause">▶</button>
+            <button type="button" id="nextSceneBtn" class="ctrl-btn" title="Next Scene">⏭</button>
+            <button type="button" id="replayBtn" class="ctrl-btn" title="Replay">🔄</button>
+          </div>
+
+          <div class="time-display" id="timeDisplay">00:00 / 00:00</div>
+
+          <div class="player-extra-controls">
+            <span class="player-speed-badge" id="playerSpeedBadge">1.0x</span>
+            <button type="button" id="fullscreenBtn" class="ctrl-btn" title="Fullscreen">⛶</button>
+          </div>
+        </div>
+
+        <!-- Hidden Audio Element for synced playback -->
+        <audio id="lessonAudio" preload="auto"></audio>
+
+        <!-- Stage 5: MP4 Export Section -->
+        <div class="export-section">
+          <div class="panel-section-title">
+            <h2>5. 720p MP4 Video Export</h2>
+            <span class="stage-tag">Stage 5</span>
+          </div>
+
+          <div class="export-actions-row">
+            <button type="button" id="exportMp4Btn" class="btn btn-export">
+              <span class="btn-icon">📥</span> Render & Download 720p MP4 (H.264)
+            </button>
+            
+            <a id="downloadMp4Link" class="btn btn-download hidden" download="blu_lesson_720p.mp4">
+              <span class="btn-icon">💾</span> Download Video (.MP4)
+            </a>
+
+            <a id="downloadSrtLink" class="btn btn-download hidden" download="blu_lesson_captions.srt">
+              <span class="btn-icon">📄</span> Download Captions (.SRT)
+            </a>
+          </div>
+
+          <div class="export-status-message" id="exportStatusMsg"></div>
+        </div>
+
+        <!-- Benchmark / Pregenerated Lesson Showcase for Judges -->
+        <div class="benchmark-section">
+          <div class="panel-section-title">
+            <h3>Judge Quick Demos (Offline Verified MP4s)</h3>
+            <span class="offline-verified-tag">Instant Playback</span>
+          </div>
+          <p class="section-help">Click any verified lesson to load and play immediately with zero wait time:</p>
+          <div class="benchmark-grid">
+            <button type="button" class="benchmark-card" data-video="/pregenerated/python_loop_en.mp4" data-topic="Python Loops" data-lang="en">
+              <span class="bench-lang">English (Indian Accent)</span>
+              <strong>Python Loops (29s)</strong>
+              <span class="bench-specs">1280x720 • H.264 • 24 FPS</span>
+            </button>
+
+            <button type="button" class="benchmark-card" data-video="/pregenerated/python_loop_hi.mp4" data-topic="Python Loops" data-lang="hi">
+              <span class="bench-lang">Hindi (हिंदी)</span>
+              <strong>पायथन लूप (32s)</strong>
+              <span class="bench-specs">1280x720 • Devanagari • AAC</span>
+            </button>
+
+            <button type="button" class="benchmark-card" data-video="/pregenerated/binary_search_en.mp4" data-topic="Binary Search" data-lang="en">
+              <span class="bench-lang">English</span>
+              <strong>Binary Search (38s)</strong>
+              <span class="bench-specs">1280x720 • Divide & Conquer</span>
+            </button>
+
+            <button type="button" class="benchmark-card" data-video="/pregenerated/binary_search_hi.mp4" data-topic="Binary Search" data-lang="hi">
+              <span class="bench-lang">Hindi (हिंदी)</span>
+              <strong>बाइनरी सर्च (37s)</strong>
+              <span class="bench-specs">1280x720 • Devanagari Subtitles</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>Blu Visual Teacher • Built for Blu Visual Teacher Hackathon (2026) • 100% Offline Local Engine • CPU/Laptop Ready</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:07,299
+A loop repeats an instruction for each value in a sequence, saving time and code.
+
+2
+00:00:07,299 --> 00:00:14,530
+The range of three generates three consecutive values: zero, one, and two.
+
+3
+00:00:14,530 --> 00:00:22,270
+In each pass, the variable i takes the next value, then executes the print statement.
+
+4
+00:00:22,270 --> 00:00:28,850
+The loop automatically advances step by step until the sequence finishes.
+
+5
+00:00:28,850 --> 00:00:37,620
+Remember: range in Python starts at zero and stops before three, so the final printed value is two.
+
