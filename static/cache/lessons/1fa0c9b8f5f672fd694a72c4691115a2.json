@@ -1,0 +1,103 @@
+{
+  "language": "te",
+  "level": "intermediate",
+  "metrics": {
+    "cached": false,
+    "planning_time_sec": 0.039,
+    "audio_generation_time_sec": 7.499
+  },
+  "scenes": [
+    {
+      "heading": "Explain Javascript అంటే ఏమిటి?",
+      "narration": "Explain Javascript గురించి సులభమైన వివరణ. ఇది దశలవారీగా ఎలా పనిచేస్తుందో ఇప్పుడు తెలుసుకుందాం.",
+      "type": "title_card",
+      "audio_url": "/static/cache/audio/bbc637184c82b534e793592f37c78211.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\bbc637184c82b534e793592f37c78211.mp3",
+      "audio_duration": 7.85,
+      "pause": 0.8,
+      "duration": 8.65
+    },
+    {
+      "code": "# Explain Javascript విధానం\ninput_data = initialize()\nresult = process(input_data)\nreturn result",
+      "heading": "దశ 1: ముఖ్య నిర్మాణం",
+      "highlight_lines": [
+        2,
+        3
+      ],
+      "narration": "ఇక్కడ దీని ముఖ్యమైన ఇన్పుట్ మరియు అవుట్పుట్ విధానాన్ని గమనించవచ్చు.",
+      "type": "code_walkthrough",
+      "audio_url": "/static/cache/audio/3222e4c42bf74638c0cb6c81680d7032.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\3222e4c42bf74638c0cb6c81680d7032.mp3",
+      "audio_duration": 4.61,
+      "pause": 0.8,
+      "duration": 5.41
+    },
+    {
+      "arrows": [
+        [
+          "ప్రారంభం",
+          "విశ్లేషణ"
+        ],
+        [
+          "విశ్లేషణ",
+          "మార్పు"
+        ],
+        [
+          "మార్పు",
+          "ఫలితం"
+        ]
+      ],
+      "heading": "దశ 2: విధాన రేఖాచిత్రం",
+      "items": [
+        "ప్రారంభం",
+        "విశ్లేషణ",
+        "మార్పు",
+        "ఫలితం"
+      ],
+      "narration": "ఈ ప్రక్రియ ప్రారంభం నుండి ఫలితం వరకు సమర్థవంతంగా సాగుతుంది.",
+      "type": "diagram",
+      "audio_url": "/static/cache/audio/49f1c8ff9963eddf0ca6a8aab9ef9a59.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\49f1c8ff9963eddf0ca6a8aab9ef9a59.mp3",
+      "audio_duration": 4.54,
+      "pause": 0.8,
+      "duration": 5.34
+    },
+    {
+      "heading": "దశ 3: కాలక్రమం",
+      "narration": "ప్రతి దశ వరుస క్రమంలో వేగంగా అమలు చేయబడుతుంది.",
+      "steps": [
+        "ఇన్పుట్ పొందడం",
+        "నియమాలు వర్తింపజేయడం",
+        "నవీకరణ",
+        "పూర్తయింది"
+      ],
+      "type": "timeline",
+      "audio_url": "/static/cache/audio/7717cdb3d0522be579d9203008feb87b.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\7717cdb3d0522be579d9203008feb87b.mp3",
+      "audio_duration": 3.72,
+      "pause": 0.8,
+      "duration": 4.52
+    },
+    {
+      "correct_index": 0,
+      "heading": "క్విజ్ ప్రశ్న",
+      "narration": "ఖచ్చితమైన మరియు సమర్థవంతమైన ఫలితాన్ని సాధించడమే దీని ముఖ్య ఉద్దేశం.",
+      "options": [
+        "సమస్య పరిష్కారం",
+        "ఆలస్యం చేయడం",
+        "లోపం రావడం",
+        "ఏదీ కాదు"
+      ],
+      "question": "Explain Javascript యొక్క ముఖ్య ప్రయోజనం ఏమిటి?",
+      "type": "quiz",
+      "audio_url": "/static/cache/audio/b2961afafa5db44145bbdc8a4cddaad3.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\b2961afafa5db44145bbdc8a4cddaad3.mp3",
+      "audio_duration": 5.23,
+      "pause": 0.8,
+      "duration": 6.03
+    }
+  ],
+  "target_length": 45,
+  "title": "Explain Javascript అవగాహన",
+  "total_duration": 29.95
+}

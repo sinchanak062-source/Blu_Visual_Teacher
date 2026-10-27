@@ -1,0 +1,104 @@
+{
+  "language": "en",
+  "level": "beginner",
+  "metrics": {
+    "cached": false,
+    "planning_time_sec": 0.211,
+    "audio_generation_time_sec": 8.203
+  },
+  "scenes": [
+    {
+      "heading": "What is Explain Javascript?",
+      "narration": "Welcome to this visual walkthrough of Explain Javascript. We break it down step by step for intuitive learning.",
+      "type": "title_card",
+      "audio_url": "/static/cache/audio/24ad87620a05adabcc43e9df1514972f.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\24ad87620a05adabcc43e9df1514972f.mp3",
+      "audio_duration": 8.66,
+      "pause": 0.8,
+      "duration": 9.46
+    },
+    {
+      "code": "# Explain Javascript Implementation\ndef execute_concept():\n    state = initialize()\n    return process(state)",
+      "heading": "Step 1: Core Mechanics",
+      "highlight_lines": [
+        2,
+        3
+      ],
+      "narration": "Here we see the fundamental mechanism: take input state, apply the rules, and produce the outcome.",
+      "type": "code_walkthrough",
+      "audio_url": "/static/cache/audio/f3d5d59f1b8b23341e6d7e2d25f827b0.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\f3d5d59f1b8b23341e6d7e2d25f827b0.mp3",
+      "audio_duration": 7.51,
+      "pause": 0.8,
+      "duration": 8.31
+    },
+    {
+      "arrows": [
+        [
+          "Initial State",
+          "Transformation"
+        ],
+        [
+          "Transformation",
+          "Validation"
+        ],
+        [
+          "Validation",
+          "Output Result"
+        ]
+      ],
+      "heading": "Step 2: Component Interaction",
+      "items": [
+        "Initial State",
+        "Transformation",
+        "Validation",
+        "Output Result"
+      ],
+      "narration": "The system moves sequentially from initial conditions through transformation to reach the target state.",
+      "type": "diagram",
+      "audio_url": "/static/cache/audio/240790ee97b07f9d8a0cd3f6fed64788.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\240790ee97b07f9d8a0cd3f6fed64788.mp3",
+      "audio_duration": 6.82,
+      "pause": 0.8,
+      "duration": 7.62
+    },
+    {
+      "heading": "Step 3: Lifecycle Overview",
+      "narration": "Each transition is verified before progressing, ensuring stability and predictable performance.",
+      "steps": [
+        "Trigger Event",
+        "Evaluate Rule",
+        "Execute Step",
+        "Verify State",
+        "Complete"
+      ],
+      "type": "timeline",
+      "audio_url": "/static/cache/audio/42a79f978d046ba2137c1b9560c98881.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\42a79f978d046ba2137c1b9560c98881.mp3",
+      "audio_duration": 7.15,
+      "pause": 0.8,
+      "duration": 7.95
+    },
+    {
+      "correct_index": 0,
+      "heading": "Concept Check",
+      "narration": "Correct! Systematic and deterministic progression ensures correct results every single time.",
+      "options": [
+        "Systematic step by step execution",
+        "Random execution",
+        "Unbounded infinite repetition",
+        "Ignoring inputs"
+      ],
+      "question": "What is the key takeaway of Explain Javascript?",
+      "type": "quiz",
+      "audio_url": "/static/cache/audio/b76c758343f13c48cb03fdd809ff4c00.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\b76c758343f13c48cb03fdd809ff4c00.mp3",
+      "audio_duration": 7.78,
+      "pause": 0.8,
+      "duration": 8.58
+    }
+  ],
+  "target_length": 45,
+  "title": "Understanding Explain Javascript",
+  "total_duration": 41.92
+}

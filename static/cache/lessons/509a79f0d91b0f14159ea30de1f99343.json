@@ -1,0 +1,105 @@
+{
+  "language": "hi",
+  "level": "beginner",
+  "metrics": {
+    "cached": false,
+    "planning_time_sec": 0.01,
+    "audio_generation_time_sec": 7.832
+  },
+  "scenes": [
+    {
+      "heading": "प्रकाश संश्लेषण की प्रक्रिया",
+      "narration": "प्रकाश संश्लेषण वह प्रक्रिया है जिससे पौधे सूर्य के प्रकाश, पानी और कार्बन डाइऑक्साइड से भोजन बनाते हैं।",
+      "type": "title_card",
+      "audio_url": "/static/cache/audio/443bfa7b41445dfbd835af37838bb33b.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\443bfa7b41445dfbd835af37838bb33b.mp3",
+      "audio_duration": 9.05,
+      "pause": 0.8,
+      "duration": 9.85
+    },
+    {
+      "arrows": [
+        [
+          "सूर्य का प्रकाश",
+          "क्लोरोफिल"
+        ],
+        [
+          "पानी (H2O)",
+          "क्लोरोफिल"
+        ],
+        [
+          "कार्बन डाइऑक्साइड",
+          "क्लोरोफिल"
+        ]
+      ],
+      "heading": "चरण 1: आवश्यक तत्व",
+      "items": [
+        "सूर्य का प्रकाश",
+        "पानी (H2O)",
+        "कार्बन डाइऑक्साइड",
+        "क्लोरोफिल"
+      ],
+      "narration": "पत्तियों में मौजूद क्लोरोफिल सूर्य की ऊर्जा को सोखता है और रासायनिक क्रिया करता है।",
+      "type": "diagram",
+      "audio_url": "/static/cache/audio/70fed62d88a2e9540a63168b5ea117d5.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\70fed62d88a2e9540a63168b5ea117d5.mp3",
+      "audio_duration": 6.65,
+      "pause": 0.8,
+      "duration": 7.45
+    },
+    {
+      "code": "6 CO2 + 6 H2O + प्रकाश\n  ==> C6H12O6 (ग्लूकोज)\n    + 6 O2 (ऑक्सीजन)",
+      "heading": "चरण 2: रासायनिक समीकरण",
+      "highlight_lines": [
+        1,
+        2,
+        3
+      ],
+      "narration": "छह CO2 और छह पानी के अणु मिलकर ग्लूकोज और सांस लेने योग्य ऑक्सीजन बनाते हैं।",
+      "type": "code_walkthrough",
+      "audio_url": "/static/cache/audio/aaa0e0ce5d4e3f781c01a96fdbb40f5b.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\aaa0e0ce5d4e3f781c01a96fdbb40f5b.mp3",
+      "audio_duration": 7.39,
+      "pause": 0.8,
+      "duration": 8.19
+    },
+    {
+      "heading": "चरण 3: ऊर्जा का चक्र",
+      "narration": "सौर ऊर्जा को रासायनिक ऊर्जा में बदलकर पौधे अपना भोजन बनाते हैं और वातावरण में ऑक्सीजन छोड़ते हैं।",
+      "steps": [
+        "प्रकाश अवशोषण",
+        "जल विघटन",
+        "ऊर्जा निर्माण",
+        "ग्लूकोज संचय",
+        "ऑक्सीजन विसर्जन"
+      ],
+      "type": "timeline",
+      "audio_url": "/static/cache/audio/744d0a433db927657495883fcbb06311.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\744d0a433db927657495883fcbb06311.mp3",
+      "audio_duration": 8.98,
+      "pause": 0.8,
+      "duration": 9.78
+    },
+    {
+      "correct_index": 0,
+      "heading": "अभ्यास प्रश्न",
+      "narration": "पौधे ऑक्सीजन को उप-उत्पाद के रूप में छोड़ते हैं, जिससे हम सांस लेते हैं।",
+      "options": [
+        "ऑक्सीजन",
+        "कार्बन डाइऑक्साइड",
+        "नाइट्रोजन",
+        "हाइड्रोजन"
+      ],
+      "question": "प्रकाश संश्लेषण के दौरान कौन सी गैस बाहर निकलती है?",
+      "type": "quiz",
+      "audio_url": "/static/cache/audio/6b516390ec11631b52d7d744a1c3bac0.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\6b516390ec11631b52d7d744a1c3bac0.mp3",
+      "audio_duration": 6.62,
+      "pause": 0.8,
+      "duration": 7.42
+    }
+  ],
+  "target_length": 45,
+  "title": "प्रकाश संश्लेषण कैसे काम करता है",
+  "total_duration": 42.69
+}

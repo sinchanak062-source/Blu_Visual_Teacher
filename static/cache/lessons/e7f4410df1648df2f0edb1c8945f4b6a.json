@@ -1,0 +1,105 @@
+{
+  "language": "en",
+  "level": "beginner",
+  "metrics": {
+    "cached": false,
+    "planning_time_sec": 0.011,
+    "audio_generation_time_sec": 0.82
+  },
+  "scenes": [
+    {
+      "heading": "How Photosynthesis Works",
+      "narration": "Photosynthesis is the process plants use to convert sunlight, water, and carbon dioxide into food and oxygen.",
+      "type": "title_card",
+      "audio_url": "/static/cache/audio/ea29326dea07aade061eee458e226e11.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\ea29326dea07aade061eee458e226e11.mp3",
+      "audio_duration": 8.4,
+      "pause": 0.8,
+      "duration": 9.2
+    },
+    {
+      "arrows": [
+        [
+          "Sunlight",
+          "Chlorophyll"
+        ],
+        [
+          "Water (H2O)",
+          "Chlorophyll"
+        ],
+        [
+          "CO2",
+          "Chlorophyll"
+        ]
+      ],
+      "heading": "Step 1: Ingredients & Energy",
+      "items": [
+        "Sunlight",
+        "Water (H2O)",
+        "CO2",
+        "Chlorophyll"
+      ],
+      "narration": "Chlorophyll in green leaves captures photon energy to split water and capture carbon dioxide.",
+      "type": "diagram",
+      "audio_url": "/static/cache/audio/6a85aaec0ada63de6dccaeb612a72184.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\6a85aaec0ada63de6dccaeb612a72184.mp3",
+      "audio_duration": 7.01,
+      "pause": 0.8,
+      "duration": 7.81
+    },
+    {
+      "code": "6 CO2 + 6 H2O + Light Energy\n  ==> C6H12O6 (Glucose)\n    + 6 O2 (Oxygen)",
+      "heading": "Step 2: Chemical Reaction",
+      "highlight_lines": [
+        1,
+        2,
+        3
+      ],
+      "narration": "Six carbon dioxide molecules and six water molecules produce one glucose molecule and six oxygen molecules.",
+      "type": "code_walkthrough",
+      "audio_url": "/static/cache/audio/49c950e6628dff5f623d0a647a7272a1.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\49c950e6628dff5f623d0a647a7272a1.mp3",
+      "audio_duration": 8.95,
+      "pause": 0.8,
+      "duration": 9.75
+    },
+    {
+      "heading": "Step 3: Energy Flow",
+      "narration": "Solar energy is stored in chemical bonds, fueling the plant while releasing vital oxygen into the air.",
+      "steps": [
+        "Light Absorption",
+        "Water Splitting",
+        "ATP Energy",
+        "Glucose Production",
+        "Oxygen Released"
+      ],
+      "type": "timeline",
+      "audio_url": "/static/cache/audio/2607dc66f692f37ca439a290c2088b94.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\2607dc66f692f37ca439a290c2088b94.mp3",
+      "audio_duration": 7.61,
+      "pause": 0.8,
+      "duration": 8.41
+    },
+    {
+      "correct_index": 0,
+      "heading": "Concept Check",
+      "narration": "Plants release oxygen as a byproduct, providing the air that animals and humans breathe.",
+      "options": [
+        "Oxygen",
+        "Carbon Dioxide",
+        "Nitrogen",
+        "Methane"
+      ],
+      "question": "What vital gas is released into the atmosphere during photosynthesis?",
+      "type": "quiz",
+      "audio_url": "/static/cache/audio/338a342f9e09d0785c6cc91e8d8e7996.mp3",
+      "audio_path": "C:\\Users\\Sinchana\\.gemini\\antigravity\\scratch\\blu-visual-teacher\\static\\cache\\audio\\338a342f9e09d0785c6cc91e8d8e7996.mp3",
+      "audio_duration": 6.74,
+      "pause": 0.8,
+      "duration": 7.54
+    }
+  ],
+  "target_length": 45,
+  "title": "How Photosynthesis Works",
+  "total_duration": 42.71
+}
